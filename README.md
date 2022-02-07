@@ -1,2 +1,2 @@
-# Simple-Api-for-fetching-images
+# Simple-Api-for-fetching-image-url-from-json
 This is a simple api for images
