@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const tokens = require('./config/tokens.json');
+const { validtoken } = require('./config/tokens.json');
 const images = require('./config/images.json');
 
 app.get('/image/dog', (request, response) => {
@@ -28,8 +28,8 @@ app.listen(`${PORT}`, () => {
   console.log(`Website is listening on port ${PORT}`);
 })
 
-function validateToken(tokens) {
-  if(tokens.includes(tokens)) {
+function validateToken(token) {
+  if(validtoken.includes(token)) {
     return true;
   } else {
     return false;
